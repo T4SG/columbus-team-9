@@ -41,8 +41,6 @@
       </div>
       <!-- Responsive calendar - END -->
     </div>
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/responsive-calendar.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
