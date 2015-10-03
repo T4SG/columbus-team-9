@@ -6,14 +6,15 @@ include('../includes/header.php');
 ?>
 
 <style>
+	.btn {
+		background-color: #1DC7EA;
+	}
+	
 	.btn-info {
 		color:#FFF;
 		 margin-bottom: 10px;
 	}
-	
-	.btn {
-		background-color: #1DC7EA;
-	}
+
 </style>
 
 
