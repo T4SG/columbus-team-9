@@ -32,7 +32,7 @@ try{
 
             //check to see if password matches hash
             //fake hash
-            $user_hash = $user_info_row['password'];
+            $user_hash = $user_info_row['password_hash'];
             if($user_hash == $pass){
                 //error here where you get a 404 if you put invalid id/pass from login.php - Montana
                 $backURL = (empty($_SESSION['backURL'])) ? '../Templates/index.html' : $_SESSION['backURL'];
