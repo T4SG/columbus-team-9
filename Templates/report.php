@@ -25,6 +25,13 @@ include('../includes/header.php');
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
+                                <?php
+                                if(isset($_GET['action']) && $_GET['action'] == 'YouToldLebron'){
+                                    echo '<div class="alert alert-success">
+                                         <strong>Success!</strong> Thanks for staying on track!
+                                        </div>';
+                                }
+                                ?>
                                 <h4 class="title">Keeping your promises</h4>
                             </div>
                             <div class="content">
@@ -60,7 +67,7 @@ include('../includes/header.php');
                                             </div>
                                         </div>
 
-                                        <div style="display:none; id='submit"><input type="submit" class="btn btn-info btn-fill pull-right">Tell Lebron!</input></div>
+                                        <div style="display:none;" id='submit'><input type="submit" class="btn btn-info btn-fill pull-right">Tell Lebron!</input></div>
                                     </div>
 
                                     <!--<div class="row">
