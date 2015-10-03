@@ -5,7 +5,6 @@ $student_id = $_SESSION['student_id'];
 include('../includes/header.php');
 ?>
 
-
 <body>
 
 <div class="wrapper">
@@ -221,10 +220,7 @@ include('../includes/header.php');
 
     </div>
 </div>
-
-
 </body>
-
     <!--   Core JS Files   -->
     <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
