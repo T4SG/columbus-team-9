@@ -83,7 +83,7 @@ function getRewardInfo($student_id){
     if($stmt->execute()){
         //select success
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $reward_info.= '<div class="box margin-btm">'.
+            $reward_info.= '<div class="box">'.
 				'<img src="images/backpack.jpg" width="320"  alt="" />'.
 				'<div class="details">'.
 					'<p>' .$row['name'] . '</p>'.

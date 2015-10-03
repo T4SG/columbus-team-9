@@ -41,7 +41,7 @@ Released   : 20130902
 		</div>
 		<div class="boxA">
 
-            <?php echo getRewardInfo($_SESSION['student_id']);?>
+            <?php// echo getRewardInfo($_SESSION['student_id']);?>
 			<!--<div class="box margin-btm">
 				<img src="images/backpack.jpg" width="320"  alt="" />
 				<div class="details">
@@ -66,6 +66,7 @@ Released   : 20130902
 
 		</div>
 		<div class="boxB">
+            <?php echo getRewardInfo($_SESSION['student_id']);?>
 			<div class="box">
 				<img src="images/macbook.png" width="320" alt="" />
 				<div class="details">
