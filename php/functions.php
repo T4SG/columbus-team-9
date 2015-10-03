@@ -35,7 +35,7 @@ function getStudentInfo($student_id){
                       '</h4>'.
                     '</a>'.
             '</div>'.
-            '<h5 class="title" style="text-align:center;">Aspiring: JOB HERE' . '</h5>'.
+            '<h5 class="title" style="text-align:center;">Aspiring: Software Engineer' . '</h5>'.
             '<p class="description text-center">'. $row['quote'] .
             '</p>';
             return $student_info;
