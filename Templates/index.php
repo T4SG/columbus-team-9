@@ -17,25 +17,25 @@ include('../includes/header.php');
               <a class="twitter-timeline" href="https://twitter.com/KingJames" data-widget-id="650175493866684416" data-chrome="nofooter noheader noborder transparent">>Tweets by @KingJames</a>
           </div>
           <div id="menu-area" style="padding:0px;">
-              <a href="reporting.html">
+              <a href="report.php">
                 <div class="menu-box" id="top-left">
                   <p class="menu-title">REPORTING</p>
                   <img src="../assets/img/checkmark21.png" style="width:100px;height:100px;">
                 </div>
               </a>
-              <a href="user.html">
+              <a href="profile.php">
                 <div class="menu-box" id="top-right">
                   <p class="menu-title">ME</p>
                   <img src="../assets/img/user168.png" style="width:100px;height:100px;">
                 </div>
               </a>
-              <a href="rewards.html">
+              <a href="rewards.php">
                 <div class="menu-box" id="bottom-left">
                   <p class="menu-title">REWARDS</p>
                   <img src="../assets/img/premium1.png" style="width:100px;height:100px;">
                 </div>
               </a>
-              <a href="calendar.html">
+              <a href="fullcalendar.html">
                 <div class="menu-box" id="bottom-right">
                   <p class="menu-title">CALENDER</p>
                   <img src="../assets/img/calendar146.png" style="width:100px;height:100px;">

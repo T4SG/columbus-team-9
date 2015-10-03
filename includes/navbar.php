@@ -7,7 +7,7 @@
                 <span style="color:white;" class="icon-bar"></span>
                 <span style="color:white;" class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html" style="padding-top:10px;color:white;">Welcome <?php echo $_SESSION['first_name'] . ' '. $_SESSION['last_name'];?></a>
+            <a class="navbar-brand" href="index.php" style="padding-top:10px;color:white;">Welcome <?php echo $_SESSION['first_name'] . ' '. $_SESSION['last_name'];?></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-left">
