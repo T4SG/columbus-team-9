@@ -32,25 +32,30 @@ include('../includes/header.php');
                                     <div class="row">
                                         <div class="col-md-5">
                                             <div class="form-group">
-                                                <label>Promised activity</label>
+                                                <label>What I promised to do</label>
                                                 <input type="text" class="form-control"  placeholder="Went to Math class" value="" name="activity_name">
+                                                <label for="new_activity">Date: <em>(MM/DD/YYYY)</em></label>
+                                                <input type="date" value="<?php echo date('Y-m-d')?>" name="date" id="date">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>Did you go?</label>
-                                                <input type="text" class="form-control" placeholder="Username" value="michael23">
+                                            <div class="form-group" >
+                                                <label>Did I do it?</label>
+                                                <input type="radio" class="form-control" value="Yes" name="did_activity"> Yes
+                                                <input type="radio" class="form-control" value="No" name="did_activity" onclick="toggle('did_activity')"> No
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" placeholder="Email">
+                                            <div class="form-group" style="display:none;" id="did_activity">
+                                                <label for="excuse">Why didn't you accomplish it?</label>
+                                                <input type="text" class="form-control" name='excuse' placeholder="Because...">
+                                                <label for="improvement">How will you improve?</label>
+                                                <input type="text" class="form-control" name='improvement 'placeholder="Next time I...">
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="row">
+                                    <!--<div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>First Name</label>
@@ -63,8 +68,8 @@ include('../includes/header.php');
                                                 <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
                                             </div>
                                         </div>
-                                    </div>
-
+                                    </div>-->
+                                    <!--
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
@@ -92,17 +97,8 @@ include('../includes/header.php');
                                             <label>Did you move? If you did let Lebron know!</label>
                                             <input type="text" class="form-control" placeholder="New Address" name="new_address">
                                         </div>
-                                    </div>
+                                    </div>-->
                             </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>About Me</label>
-                                    <textarea rows="5" class="form-control" placeholder="Words you live by" value="Mike"></textarea>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
-                            <div class="clearfix"></div>
                             </form>
                         </div>
                     </div>
@@ -140,5 +136,18 @@ include('../includes/header.php');
 
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
-
+<script>
+    function toggle(id)
+    {
+        var e = document.getElementById(id);
+        if (e.style.display == 'block' || e.style.display=='')
+        {
+            e.style.display = 'none';
+        }
+        else
+        {
+            e.style.display = 'block';
+        }
+    }
+</script>
 </html>
