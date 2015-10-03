@@ -41,18 +41,25 @@ include('../includes/header.php');
                                         <div class="col-md-3">
                                             <div class="form-group" >
                                                 <label>Did I do it?</label>
-                                                <input type="radio" class="form-control" value="Yes" name="did_activity"> Yes
-                                                <input type="radio" class="form-control" value="No" name="did_activity" onclick="toggle('did_activity')"> No
+                                                <input type="radio" class="form-control" value="Yes" name="did_activity" onclick="toggle('did_activity')"> Yes
+                                                <input type="radio" class="form-control" value="No" name="did_not_do_activity" onclick="toggle('did_not_do_activity')"> No
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group" style="display:none;" id="did_activity">
+                                            <div class="form-group" style="display:none;" id="did_not_do_activity">
                                                 <label for="excuse">Why didn't you accomplish it?</label>
                                                 <input type="text" class="form-control" name='excuse' placeholder="Because...">
                                                 <label for="improvement">How will you improve?</label>
                                                 <input type="text" class="form-control" name='improvement 'placeholder="Next time I...">
                                             </div>
                                         </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group" style="display:none;" id="did_activity">
+                                                <label for="excuse">Great thanks for keeping your side of the promise! Name one thing your learned!</label>
+                                                <input type="text" class="form-control" name='excuse' placeholder="Did you know that Penguins have knees?">
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="btn btn-info btn-fill pull-right">Tell Lebron!</input>
                                     </div>
 
                                     <!--<div class="row">
@@ -98,8 +105,9 @@ include('../includes/header.php');
                                             <input type="text" class="form-control" placeholder="New Address" name="new_address">
                                         </div>
                                     </div>-->
+                                    </form>
                             </div>
-                            </form>
+
                         </div>
                     </div>
                 </div

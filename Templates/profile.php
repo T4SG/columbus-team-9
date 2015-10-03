@@ -208,7 +208,7 @@ include('../includes/header.php');
                                             </div>
                                         </div>
 
-                                    <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                            <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
