@@ -40,6 +40,7 @@
 
 #bottom-left {
   float: left;
+  background-color: #4BA3C3;
 }
 #bottom-left:hover {
   opacity: 0.5;
@@ -47,6 +48,7 @@
 
 #bottom-right {
   float: right;
+  background-color: #BA324F;
 }
 #bottom-right:hover {
   opacity: 0.5;
