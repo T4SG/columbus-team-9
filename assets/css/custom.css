@@ -1,7 +1,25 @@
+#lebron-area {
+  height: 100%;
+  width: 30%;
+  background-color: red;
+  float: left;
+  background-image: url(../img/lebron-background.png);
+  background-size: cover;
+  opacity: 0.4;
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
+}
+
 #menu-area {
   height: 100%;
-  width: 100%;
+  width: 65%;
   background-color: white;
+  float: right;
 }
 
 .menu-box {
@@ -17,21 +35,34 @@
   border-right: 0;
   border-bottom: 0;
 }
+#top-left:hover {
+  opacity: 0.5;
+}
 
 #top-right {
   float: right;
   border-bottom: 0;
+}
+#top-right:hover {
+  opacity: 0.5;
 }
 
 #bottom-left {
   float: left;
   border-right: 0;
 }
+#bottom-left:hover {
+  opacity: 0.5;
+}
 
 #bottom-right {
   float: right;
   text-align:center;
 }
+#bottom-right:hover {
+  opacity: 0.5;
+}
+
 
 .menu-title {
   text-align: center;
