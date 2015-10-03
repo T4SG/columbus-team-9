@@ -50,6 +50,9 @@ include('../includes/header.php');
 			</div>
 
 		</div>-->
+		<div class="boxB">
+            <?php echo getRewardInfo($_SESSION['student_id']);?>
+		</div>
 
 	</div>
 </div>
