@@ -30,7 +30,7 @@ function getStudentInfo($student_id){
             '<div class="author">'.
                 '<a href="#"><br/>'.
                     '<img class="avatar border-gray" src="../assets/img/faces/face-3.jpg" alt="..."/>'.
-                      '<h4 class="title">'.$row['first_name'] . ' ' . $row['last_name'] . ' '.  
+                      '<h4 class="title">'.$row['first_name'] . ' ' . $row['last_name'] . ' '.
         '<br />'.
                          '<small>'. $row['user_name'] .  '</small>'.
                       '</h4>'.

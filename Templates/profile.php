@@ -390,9 +390,6 @@ $student_id = $_SESSION['student_id'];
                         </li>
                     </ul>
                 </nav>
-                <p class="copyright pull-right">
-                    &copy; 2015 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                </p>
             </div>
         </footer>
         
