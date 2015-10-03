@@ -1,6 +1,7 @@
 <style>
 	.btn-info {
 		color:#FFF;
+		 margin-bottom: 10px;
 	}
 	
 	.btn {
