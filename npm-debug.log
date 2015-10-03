@@ -1,0 +1,213 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'mysql' ]
+2 info using npm@2.9.1
+3 info using node@v0.12.3
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'mysql', null ]
+7 verbose cache add spec mysql
+8 silly cache add parsed spec { raw: 'mysql',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'mysql',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed mysql@*
+10 verbose addNamed "*" is a valid semver range for mysql
+11 silly addNameRange { name: 'mysql', range: '*', hasData: false }
+12 silly mapToRegistry name mysql
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/mysql
+16 verbose addNameRange registry:https://registry.npmjs.org/mysql not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/mysql
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 3:10:24 AM
+20 verbose request id b7a7a50888fd2715
+21 http request GET https://registry.npmjs.org/mysql
+22 http 200 https://registry.npmjs.org/mysql
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"84L81N19DEVBEKA9A8EQGHWL5"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '116762',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Sat, 03 Oct 2015 07:10:25 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-jfk1025-JFK',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1443856225.138393,VS0,VE92',
+23 silly get     vary: 'Accept' } ]
+24 verbose get saving mysql to /Users/mohitbhatia/.npm/registry.npmjs.org/mysql/.cache.json
+25 silly addNameRange number 2 { name: 'mysql', range: '*', hasData: true }
+26 silly addNameRange versions [ 'mysql',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.5.0',
+26 silly addNameRange     '0.6.0',
+26 silly addNameRange     '0.7.0',
+26 silly addNameRange     '0.8.0',
+26 silly addNameRange     '0.9.0',
+26 silly addNameRange     '0.9.1',
+26 silly addNameRange     '0.9.2',
+26 silly addNameRange     '0.9.3',
+26 silly addNameRange     '0.9.4',
+26 silly addNameRange     '0.9.5',
+26 silly addNameRange     '0.9.6',
+26 silly addNameRange     '2.0.0-alpha',
+26 silly addNameRange     '2.0.0-alpha2',
+26 silly addNameRange     '2.0.0-alpha3',
+26 silly addNameRange     '2.0.0-alpha4',
+26 silly addNameRange     '2.0.0-alpha5',
+26 silly addNameRange     '2.0.0-alpha6',
+26 silly addNameRange     '2.0.0-alpha7',
+26 silly addNameRange     '2.0.0-alpha8',
+26 silly addNameRange     '2.0.0-alpha9',
+26 silly addNameRange     '2.0.0-rc1',
+26 silly addNameRange     '2.0.0-rc2',
+26 silly addNameRange     '2.0.0',
+26 silly addNameRange     '2.0.1',
+26 silly addNameRange     '2.1.0',
+26 silly addNameRange     '2.1.1',
+26 silly addNameRange     '2.2.0',
+26 silly addNameRange     '2.3.0',
+26 silly addNameRange     '2.3.1',
+26 silly addNameRange     '2.3.2',
+26 silly addNameRange     '2.4.0',
+26 silly addNameRange     '2.4.1',
+26 silly addNameRange     '2.4.2',
+26 silly addNameRange     '2.4.3',
+26 silly addNameRange     '2.5.0',
+26 silly addNameRange     '2.5.1',
+26 silly addNameRange     '2.5.2',
+26 silly addNameRange     '2.5.3',
+26 silly addNameRange     '2.5.4',
+26 silly addNameRange     '2.5.5',
+26 silly addNameRange     '2.6.0',
+26 silly addNameRange     '2.6.1',
+26 silly addNameRange     '2.6.2',
+26 silly addNameRange     '2.7.0',
+26 silly addNameRange     '2.8.0',
+26 silly addNameRange     '2.9.0' ] ]
+27 silly addNamed mysql@2.9.0
+28 verbose addNamed "2.9.0" is a plain semver version for mysql
+29 silly mapToRegistry name mysql
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/mysql
+33 verbose addRemoteTarball https://registry.npmjs.org/mysql/-/mysql-2.9.0.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/mysql/-/mysql-2.9.0.tgz',
+34 verbose addRemoteTarball   '8b2218a9ddaf92518caefad78d152df1b6b64213' ]
+35 info retry fetch attempt 1 at 3:10:25 AM
+36 info attempt registry request try #1 at 3:10:25 AM
+37 http fetch GET https://registry.npmjs.org/mysql/-/mysql-2.9.0.tgz
+38 http fetch 200 https://registry.npmjs.org/mysql/-/mysql-2.9.0.tgz
+39 silly fetchAndShaCheck shasum 8b2218a9ddaf92518caefad78d152df1b6b64213
+40 verbose addTmpTarball /var/folders/j7/fry45by14b3cmlv1vq58116m0000gn/T/npm-16852-3ef71b78/registry.npmjs.org/mysql/-/mysql-2.9.0.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for mysql@2.9.0
+42 silly cache afterAdd mysql@2.9.0
+43 verbose afterAdd /Users/mohitbhatia/.npm/mysql/2.9.0/package/package.json not in flight; writing
+44 verbose afterAdd /Users/mohitbhatia/.npm/mysql/2.9.0/package/package.json written
+45 silly install resolved [ { name: 'mysql',
+45 silly install resolved     description: 'A node.js driver for mysql. It is written in JavaScript, does not require compiling, and is 100% MIT licensed.',
+45 silly install resolved     version: '2.9.0',
+45 silly install resolved     license: 'MIT',
+45 silly install resolved     author:
+45 silly install resolved      { name: 'Felix Geisendörfer',
+45 silly install resolved        email: 'felix@debuggable.com',
+45 silly install resolved        url: 'http://debuggable.com/' },
+45 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+45 silly install resolved     homepage: 'https://github.com/felixge/node-mysql',
+45 silly install resolved     repository: { type: 'git', url: 'https://github.com/felixge/node-mysql' },
+45 silly install resolved     dependencies: { 'bignumber.js': '2.0.7', 'readable-stream': '~1.1.13' },
+45 silly install resolved     devDependencies:
+45 silly install resolved      { istanbul: '0.3.9',
+45 silly install resolved        rimraf: '2.2.8',
+45 silly install resolved        'require-all': '~1.1.0',
+45 silly install resolved        'timezone-mock': '0.0.0',
+45 silly install resolved        mkdirp: '0.5.1',
+45 silly install resolved        urun: '0.0.8',
+45 silly install resolved        utest: '0.0.8' },
+45 silly install resolved     files: [ 'lib/', 'Changes.md', 'License', 'Readme.md', 'index.js' ],
+45 silly install resolved     engines: { node: '>= 0.6' },
+45 silly install resolved     scripts:
+45 silly install resolved      { test: 'node test/run.js',
+45 silly install resolved        'test-ci': 'node test/run-cov.js lcovonly',
+45 silly install resolved        'test-cov': 'node test/run-cov.js' },
+45 silly install resolved     gitHead: '6ad9f4b0cf40b563cb583b169bda531bdb731159',
+45 silly install resolved     bugs: { url: 'https://github.com/felixge/node-mysql/issues' },
+45 silly install resolved     _id: 'mysql@2.9.0',
+45 silly install resolved     _shasum: '8b2218a9ddaf92518caefad78d152df1b6b64213',
+45 silly install resolved     _from: 'mysql@*',
+45 silly install resolved     _npmVersion: '1.4.28',
+45 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+45 silly install resolved     maintainers:
+45 silly install resolved      [ [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object] ],
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '8b2218a9ddaf92518caefad78d152df1b6b64213',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/mysql/-/mysql-2.9.0.tgz' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/mysql/-/mysql-2.9.0.tgz' } ]
+46 info install mysql@2.9.0 into /usr/local/lib
+47 info installOne mysql@2.9.0
+48 verbose installOne of mysql to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/mohitbhatia/.npm/_locks/mysql-551f75177682f3e5.lock for /usr/local/lib/node_modules/mysql
+50 silly install write writing mysql 2.9.0 to /usr/local/lib/node_modules/mysql
+51 verbose unbuild lib/node_modules/mysql
+52 silly gentlyRm /usr/local/lib/node_modules/mysql is being purged from base /usr/local
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/mysql
+54 verbose tar unpack /Users/mohitbhatia/.npm/mysql/2.9.0/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/mysql
+56 silly gentlyRm /usr/local/lib/node_modules/mysql is being purged
+57 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/mysql
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 error tar.unpack untar error /Users/mohitbhatia/.npm/mysql/2.9.0/package.tgz
+60 verbose unlock done using /Users/mohitbhatia/.npm/_locks/mysql-551f75177682f3e5.lock for /usr/local/lib/node_modules/mysql
+61 verbose fstream_path /usr/local/lib/node_modules/mysql
+62 verbose fstream_type Directory
+63 verbose fstream_class DirWriter
+64 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/mysql'
+64 verbose stack     at Error (native)
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+65 verbose fstream_stack FSReqWrap.oncomplete (fs.js:95:15)
+66 verbose cwd /Users/mohitbhatia/Desktop/columbus-team-9
+67 error Darwin 13.4.0
+68 error argv "node" "/usr/local/bin/npm" "install" "-g" "mysql"
+69 error node v0.12.3
+70 error npm  v2.9.1
+71 error path /usr/local/lib/node_modules/mysql
+72 error code EACCES
+73 error errno -13
+74 error Error: EACCES, mkdir '/usr/local/lib/node_modules/mysql'
+74 error     at Error (native)
+74 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/mysql']
+74 error   errno: -13,
+74 error   code: 'EACCES',
+74 error   path: '/usr/local/lib/node_modules/mysql',
+74 error   fstream_type: 'Directory',
+74 error   fstream_path: '/usr/local/lib/node_modules/mysql',
+74 error   fstream_class: 'DirWriter',
+74 error   fstream_stack:
+74 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+74 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+74 error      'FSReqWrap.oncomplete (fs.js:95:15)' ] }
+75 error Please try running this command again as root/Administrator.
+76 verbose exit [ -13, true ]
+77 verbose unbuild lib/node_modules/mysql
+78 silly gentlyRm /usr/local/lib/node_modules/mysql is being purged from base /usr/local
+79 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/mysql
