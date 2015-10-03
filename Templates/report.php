@@ -48,8 +48,8 @@ include('../includes/header.php');
                                         <div class="col-md-3">
                                             <div class="form-group" >
                                                 <label>Did I do it?</label>
-                                                <input type="radio" class="form-control" value="Yes" name="did_activity" onclick="toggle('did_activity')"> Yes
-                                                <input type="radio" class="form-control" value="No" name="did_not_do_activity" onclick="toggle('did_not_do_activity')"> No
+                                                <input type="radio" class="form-control" name="kept_promise" value="Yes" name="did_activity" onclick="toggle('did_activity')"> Yes
+                                                <input type="radio" class="form-control" name="kept_promise" value="No" name="did_not_do_activity" onclick="toggle('did_not_do_activity')"> No
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -57,13 +57,13 @@ include('../includes/header.php');
                                                 <label for="excuse">Why didn't you accomplish it?</label>
                                                 <input type="text" class="form-control" name='excuse' placeholder="Because..." >
                                                 <label for="improvement">How will you improve?</label>
-                                                <input type="text" class="form-control" name='improvement 'placeholder="Next time I..." onkeyup="toggle('submit')">
+                                                <input type="text" class="form-control" name='improvement 'placeholder="Next time I..." onchange="toggle('submit')">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group" style="display:none;" id="did_activity">
                                                 <label for="excuse">Great thanks for keeping your side of the promise! Name one thing your learned!</label>
-                                                <input type="text" class="form-control" name='excuse' placeholder="Did you know that Penguins have knees?"  onkeyup="toggle('submit')">
+                                                <input type="text" class="form-control" name='excuse' placeholder="Did you know that Penguins have knees?"  onchange="toggle('submit')">
                                             </div>
                                         </div>
 

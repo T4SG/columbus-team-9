@@ -4,6 +4,13 @@ ob_start();
 session_start();
 require_once("Creds.php");
 
+//for purposes of demonstration
+if(isset($_POST['username'])){
+    if($_POST['username'] == 'admin'){
+        header("Location: ../Templates/admin.php");
+        exit();
+    }
+}
 try{
     //create new PDO object connected to mySQL server
     $pdo = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USERNAME, DB_PASSWORD);
@@ -32,10 +39,10 @@ try{
             $_SESSION['promise_cash'] = $user_info_row['promise_cash'];
 
             //check to see if password matches hash
-            //fake hash
             $user_hash = $user_info_row['password_hash'];
+            //removed hash check in interest of time, comparing plaintext password
             if($user_hash == $pass){
-                //error here where you get a 404 if you put invalid id/pass from login.php - Montana
+                //error here where you get a 404 if you put invalid id/pass from login.html - Montana
                 $backURL = (empty($_SESSION['backURL'])) ? '../Templates/index.php' : $_SESSION['backURL'];
                 unset($_SESSION['backURL']);
                 header('Location:'.$backURL);
