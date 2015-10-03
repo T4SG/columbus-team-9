@@ -35,7 +35,7 @@ include('../includes/header.php');
                   <img src="../assets/img/premium1.png" style="width:100px;height:100px;">
                 </div>
               </a>
-              <a href="fullcalendar.html">
+              <a href="fullcalendar.php">
                 <div class="menu-box" id="bottom-right">
                   <p class="menu-title">CALENDER</p>
                   <img src="../assets/img/calendar146.png" style="width:100px;height:100px;">
