@@ -7,7 +7,7 @@
  */
 
 //DB Creds
-define('DB_HOST', 'ec2-184-73-26-155.compute-1.amazonaws.com');
+define('DB_HOST','127.0.0.1:3307'); //'ec2-184-73-26-155.compute-1.amazonaws.com');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'code4good');
 define('DB_TYPE', 'mysql');
