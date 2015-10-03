@@ -3,30 +3,22 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
   <script src="../assets/js/chart.js"></script>
-
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-
 <body>
-
   <div class="wrapper">
       <?php include('../includes/sidebar.php');?>
-
       <div class="main-panel">
           <?php include('../includes/navbar.php');?>
-
           <div class="content" style="height:90%;padding:0px;">
             <div id="menu-area" style="padding:0px;">
                 <p style="font-size:20px;">Student Attendance by Month</p>
@@ -34,10 +26,8 @@ session_start();
                 <canvas id="myChart2" width="400" height="300"></canvas>
             </div>
           </div>
-
       </div>
   </div>
-
   <script>
     var ctx = document.getElementById("myChart1").getContext("2d");
 
