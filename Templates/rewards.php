@@ -1,3 +1,13 @@
+<style>
+	.btn-info {
+		color:#FFF;
+	}
+	
+	.btn {
+		background-color: #1DC7EA;
+	}
+</style>
+
 <?php
 /**
  * Created by PhpStorm.
