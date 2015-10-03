@@ -1,3 +1,10 @@
+<?php
+session_start();
+include_once('../php/functions.php');
+$student_id = $_SESSION['student_id'];
+include('../includes/header.php');
+?>
+
 <style>
 	.btn-info {
 		color:#FFF;
@@ -8,19 +15,6 @@
 		background-color: #1DC7EA;
 	}
 </style>
-
-<?php
-/**
- * Created by PhpStorm.
- * User: montanawong
- * Date: 10/3/15
- * Time: 02:50
- */
-session_start();
-include_once('../php/functions.php');
-$student_id = $_SESSION['student_id'];
-include('../includes/header.php');
-?>
 
 
 <body>
