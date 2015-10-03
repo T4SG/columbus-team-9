@@ -16,12 +16,12 @@
 
         <ul class="nav">
             <li class="active">
-                <a href="index.html">
+                <a href="index.php">
                     <p>Dashboard</p>
                 </a>
             </li>
             <li>
-                <a href="user.html">
+                <a href="profile.php">
                     <p>User Profile</p>
                 </a>
             </li>
@@ -31,7 +31,7 @@
                 </a>
             </li>
             <li>
-                <a href="success.html">
+                <a href="success.php">
                     <p>Success Stories</p>
                 </a>
             </li>
