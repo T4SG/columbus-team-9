@@ -31,7 +31,7 @@
                 </a>
             </li>
             <li>
-                <a href="Calendar">
+                <a href="fullcalendar.php">
                     <p>Calendar</p>
                 </a>
             </li>
