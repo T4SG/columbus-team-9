@@ -1,0 +1,40 @@
+#menu-area {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.menu-box {
+    padding-top: 20px;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    text-align:center;
+}
+
+#top-left {
+  float: left;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+#top-right {
+  float: right;
+  border-bottom: 0;
+}
+
+#bottom-left {
+  float: left;
+  border-right: 0;
+}
+
+#bottom-right {
+  float: right;
+  text-align:center;
+}
+
+.menu-title {
+  text-align: center;
+  color: #002D62;
+  font-size: 40px;
+}
