@@ -32,13 +32,13 @@ include('../includes/header.php');
                                     <div class="row">
                                         <div class="col-md-5">
                                             <div class="form-group">
-                                                <label>Company (disabled)</label>
-                                                <input type="text" class="form-control" disabled placeholder="Company" value="Creative Code Inc.">
+                                                <label>Promised activity</label>
+                                                <input type="text" class="form-control"  placeholder="Went to Math class" value="" name="activity_name">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>Username</label>
+                                                <label>Did you go?</label>
                                                 <input type="text" class="form-control" placeholder="Username" value="michael23">
                                             </div>
                                         </div>
