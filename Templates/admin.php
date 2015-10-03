@@ -9,11 +9,9 @@ session_start();
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-<<<<<<< HEAD
 
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-=======
->>>>>>> 38d6ccc79f4da65017ad400a3e9e6813dea85886
+
   <script src="../assets/js/chart.js"></script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,35 +19,98 @@ session_start();
 </head>
 <body>
   <div class="wrapper">
-<<<<<<< HEAD
       <div class="main-panel">
 
         <nav class="navbar navbar-default navbar-static-top" style="height:50px;background-color:#002D62;">
             <div class="container-fluid">
                 <p style="color:white;font-size:30px;float:left;margin-left:20px;">Metrics<p>
-                <a style="color:white;font-size:20px;float:right;" href="login.html">Logout</a>
+                <div style="padding-top:3px;">
+                  <a style="color:white;font-size:20px;float:right;" href="login.html">Logout</a>
+                </div>
             </div>
         </nav>
 
-
-=======
-      <?php include('../includes/sidebar.php');?>
       <div class="main-panel">
-          <?php include('../includes/navbar.php');?>
->>>>>>> 38d6ccc79f4da65017ad400a3e9e6813dea85886
+
           <div class="content" style="height:90%;padding:0px;">
             <div id="menu-area" style="padding:0px;">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-sm-6">
-                    <p style="font-size:20px;">Student Attendance by Month</p>
-                    <canvas id="myChart1" width="300" height="300" style="float:left;"></canvas>
+                    <p style="font-size:20px;padding-left:110px;">Student Attendance by Month</p>
+                    <canvas id="myChart1" width="330" height="300" style="padding-left:90px;"></canvas>
                   </div>
                   <div class="col-sm-6">
-                    <p style="font-size:20px;">Event Participation</p>
-                    <canvas id="myChart2" width="300" height="300" style="float:right;"></canvas>
+                    <p style="font-size:20px;padding-left:80px;">Event Participation</p>
+                    <canvas id="myChart2" width="300" height="300" style="padding-left:30px;"></canvas>
                   </div>
                 </div>
+              </div>
+              <div class="container" style="padding-top:20px;">
+                <h2>Student Activities</h2>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Firstname</th>
+                      <th>Lastname</th>
+                      <th>Activity</th>
+                      <th>Approved</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>Attendance</td>
+                      <td>
+                          <input type="checkbox">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>Volunteer Event</td>
+                      <td>
+                          <input type="checkbox">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      <td>Attendance</td>
+                      <td>
+                          <input type="checkbox">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>Attendance</td>
+                      <td>
+                          <input type="checkbox">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>Exam Grade (95%)</td>
+                      <td>
+                          <input type="checkbox">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      <td>Volunteer Event</td>
+                      <td>
+                          <input type="checkbox">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="margin:10px;margin-right:130px;float:right;">
+                <input type="submit" value="Enter Information">
               </div>
             </div>
           </div>

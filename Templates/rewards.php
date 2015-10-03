@@ -9,7 +9,7 @@ include('../includes/header.php');
 	.btn {
 		background-color: #1DC7EA;
 	}
-	
+
 	.btn-info {
 		color:#FFF;
 		 margin-bottom: 10px;
