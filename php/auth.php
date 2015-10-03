@@ -32,8 +32,8 @@ try{
             $_SESSION['promise_cash'] = $user_info_row['promise_cash'];
 
             //check to see if password matches hash
-            //fake hash
             $user_hash = $user_info_row['password_hash'];
+            //removed hash check in interest of time, comparing plaintext password
             if($user_hash == $pass){
                 //error here where you get a 404 if you put invalid id/pass from login.php - Montana
                 $backURL = (empty($_SESSION['backURL'])) ? '../Templates/index.php' : $_SESSION['backURL'];

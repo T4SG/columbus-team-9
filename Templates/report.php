@@ -48,8 +48,8 @@ include('../includes/header.php');
                                         <div class="col-md-3">
                                             <div class="form-group" >
                                                 <label>Did I do it?</label>
-                                                <input type="radio" class="form-control" value="Yes" name="did_activity" onclick="toggle('did_activity')"> Yes
-                                                <input type="radio" class="form-control" value="No" name="did_not_do_activity" onclick="toggle('did_not_do_activity')"> No
+                                                <input type="radio" class="form-control" name="kept_promise" value="Yes" name="did_activity" onclick="toggle('did_activity')"> Yes
+                                                <input type="radio" class="form-control" name="kept_promise" value="No" name="did_not_do_activity" onclick="toggle('did_not_do_activity')"> No
                                             </div>
                                         </div>
                                         <div class="col-md-4">
