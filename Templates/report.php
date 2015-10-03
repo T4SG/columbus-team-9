@@ -25,6 +25,13 @@ include('../includes/header.php');
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
+                                <?php
+                                if(isset($_GET['action']) && $_GET['action'] == 'YouToldLebron'){
+                                    echo '<div class="alert alert-success">
+                                         <strong>Success!</strong> Thanks for staying on track!
+                                        </div>';
+                                }
+                                ?>
                                 <h4 class="title">Keeping your promises</h4>
                             </div>
                             <div class="content">
@@ -48,19 +55,19 @@ include('../includes/header.php');
                                         <div class="col-md-4">
                                             <div class="form-group" style="display:none;" id="did_not_do_activity">
                                                 <label for="excuse">Why didn't you accomplish it?</label>
-                                                <input type="text" class="form-control" name='excuse' placeholder="Because...">
+                                                <input type="text" class="form-control" name='excuse' placeholder="Because..." >
                                                 <label for="improvement">How will you improve?</label>
-                                                <input type="text" class="form-control" name='improvement 'placeholder="Next time I..." onchange="toggle('submit')">
+                                                <input type="text" class="form-control" name='improvement 'placeholder="Next time I..." onkeyup="toggle('submit')">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group" style="display:none;" id="did_activity">
                                                 <label for="excuse">Great thanks for keeping your side of the promise! Name one thing your learned!</label>
-                                                <input type="text" class="form-control" name='excuse' placeholder="Did you know that Penguins have knees?" onchange="toggle('submit')">
+                                                <input type="text" class="form-control" name='excuse' placeholder="Did you know that Penguins have knees?"  onkeyup="toggle('submit')">
                                             </div>
                                         </div>
 
-                                        <div style="display:none; id='submit"><input type="submit" class="btn btn-info btn-fill pull-right">Tell Lebron!</input></div>
+                                        <div style="display:none;" id='submit'><input type="submit" class="btn btn-info btn-fill pull-right">Tell Lebron!</input></div>
                                     </div>
 
                                     <!--<div class="row">

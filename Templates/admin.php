@@ -3,26 +3,25 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+<<<<<<< HEAD
 
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+=======
+>>>>>>> 38d6ccc79f4da65017ad400a3e9e6813dea85886
   <script src="../assets/js/chart.js"></script>
-
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-
 <body>
-
   <div class="wrapper">
+<<<<<<< HEAD
       <div class="main-panel">
 
         <nav class="navbar navbar-default navbar-static-top" style="height:50px;background-color:#002D62;">
@@ -33,6 +32,11 @@ session_start();
         </nav>
 
 
+=======
+      <?php include('../includes/sidebar.php');?>
+      <div class="main-panel">
+          <?php include('../includes/navbar.php');?>
+>>>>>>> 38d6ccc79f4da65017ad400a3e9e6813dea85886
           <div class="content" style="height:90%;padding:0px;">
             <div id="menu-area" style="padding:0px;">
               <div class="container-fluid">
@@ -49,10 +53,8 @@ session_start();
               </div>
             </div>
           </div>
-
       </div>
   </div>
-
   <script>
     var ctx = document.getElementById("myChart1").getContext("2d");
 

@@ -86,7 +86,7 @@ function getRewardInfo($student_id){
 				'<div class="details">'.
 					'<p>' .$row['name'] . '</p>'.
 				'</div>'.
-				'<div class="btn">' . '$' .$row['promise_cash_value'] . '</div>'.
+				'<div class="btn btn-info">' . '$' .$row['promise_cash_value'] . '</div>'.
 			'</div>';
         }
         return $reward_info;
