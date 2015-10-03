@@ -35,9 +35,9 @@ function getStudentInfo($student_id){
                       '</h4>'.
                     '</a>'.
             '</div>'.
-            '<h5 class="title" style="text-align:center;">Aspiring: Software Engineer' . '</h5>'.
-            '<p class="description text-center">'. $row['quote'] .
-            '</p>';
+            '<h5 class="title" style="text-align:center;">Aspiring: Software Engineer' . '</h5> <br/>'.
+            '<p class="description text-center">Words I live by: '. '<em>' . $row['quote'] . '</em>'.
+            '</p><br/><br/>';
             return $student_info;
     }
     else{
