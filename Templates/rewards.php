@@ -40,7 +40,9 @@ Released   : 20130902
 			<p>Place holder</p>
 		</div>
 		<div class="boxA">
-			<div class="box margin-btm">
+
+            <?php echo getRewardInfo($_SESSION['student_id']);?>
+			<!--<div class="box margin-btm">
 				<img src="images/backpack.jpg" width="320"  alt="" />
 				<div class="details">
 					<p>Backpack</p>
@@ -60,7 +62,7 @@ Released   : 20130902
 					<p>iPad</p>
 				</div>
 				<a class="button">$150</a>
-			</div>
+			</div>-->
 
 		</div>
 		<div class="boxB">

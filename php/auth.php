@@ -29,7 +29,7 @@ try{
             $_SESSION['first_name'] = $user_info_row['first_name'];
             $_SESSION['last_name'] = $user_info_row['last_name'];
             $_SESSION['user_name'] = $user_info_row['user_name'];
-            $_SESSION['promise_cash'] = $user_info_row['promise_case'];
+            $_SESSION['promise_cash'] = $user_info_row['promise_cash'];
 
             //check to see if password matches hash
             //fake hash

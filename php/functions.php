@@ -48,8 +48,9 @@ function getStudentInfo($student_id){
 
 }
 
-function getrewardInfo($student_id){
+function getRewardInfo($student_id){
     $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME;
+    $pdo = null;
     try {
         $pdo = new PDO($dsn,DB_USERNAME,DB_PASSWORD);
     }
@@ -57,16 +58,38 @@ function getrewardInfo($student_id){
         return $pe->getTraceAsString();
     }
 
-    $promise_cash = "SELECT promise_cash FROM student WHERE student_id = " . $student_id . ";"
-    $query = "SELECT * FROM rewards WHERE promise_cash_value >= ?;";
+    //get student's promise cash
+    $promise_cash = 0;
+    $query1 = "SELECT promise_cash FROM student WHERE student_id = ?;";
+    $stmt = $pdo->prepare($query1);
+    $stmt->bindParam(1, $student_id, PDO::PARAM_STR);
+    if($stmt->execute()){
+        $promise_cash = $stmt->fetch(PDO::FETCH_ASSOC)['promise_cash'];
+    }
+    else{
+        // failure
+        return 0;
+    }
+
+
+
+    //get all rewards with promise cash value of equal or lesser value
+    $query = "SELECT * FROM rewards
+                WHERE promise_cash_value <= ?
+                ORDER BY promise_cash_value ASC;";
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(1, $promise_cash, PDO::PARAM_STR);
+    $reward_info = '';
     if($stmt->execute()){
         //select success
-        $reward_info = '';
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
-            $reward_info .= '<h1>' . $row['name'] . " " . $row['description'] . '</h1>';
+            $reward_info.= '<div class="box margin-btm">'.
+				'<img src="images/backpack.jpg" width="320"  alt="" />'.
+				'<div class="details">'.
+					'<p>' .$row['name'] . '</p>'.
+				'</div>'.
+				'<a class="button">' . '$' .$row['promise_cash_value'] . '</a>'.
+			'</div>';
         }
         return $reward_info;
     }
