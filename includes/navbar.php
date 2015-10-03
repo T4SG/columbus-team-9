@@ -8,7 +8,7 @@
                 <span style="color:white;" class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php" style="padding-top:10px;color:white;">Welcome <?php echo $_SESSION['first_name'] . ' '. $_SESSION['last_name'];?></a>
-            <p style="color:white;font-size:20px;text-align:right;padding-top:10px;">$750</p>
+            <p style="color:white;font-size:20px;text-align:right;padding-top:10px;">$<?php echo $_SESSION['promise_cash'];?></p>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-left">

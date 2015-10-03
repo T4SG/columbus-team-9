@@ -1,3 +1,7 @@
+<?php if(!isset($_SESSION['user_name']));
+header("Location: login.html?action=notloggedin");
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
