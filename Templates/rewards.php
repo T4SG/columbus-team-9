@@ -1,22 +1,33 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: montanawong
+ * Date: 10/3/15
+ * Time: 02:50
+ */
 session_start();
 include_once('../php/functions.php');
+$student_id = $_SESSION['student_id'];
 include('../includes/header.php');
 ?>
 
+
 <body>
 
-<div id="page">
+<div class="wrapper">
+    <?php include('../includes/sidebar.php'); ?>
+
+    <div class="main-panel">
+        <?php include('../includes/navbar.php');?>
+
 	<div class="container">
 		<div class="title">
 			<h2>Rewards</h2>
-			<p>Place holder</p>
 		</div>
-		<div class="boxA">
+		<!--<div class="boxA">
 
-            <?php// echo getRewardInfo($_SESSION['student_id']);?>
-			<!--<div class="box margin-btm">
+
+			<div class="box margin-btm">
 				<img src="images/backpack.jpg" width="320"  alt="" />
 				<div class="details">
 					<p>Backpack</p>
@@ -36,9 +47,9 @@ include('../includes/header.php');
 					<p>iPad</p>
 				</div>
 				<a class="button">$150</a>
-			</div>-->
+			</div>
 
-		</div>
+		</div>-->
 		<div class="boxB">
             <?php echo getRewardInfo($_SESSION['student_id']);?>
 			<div class="box">
