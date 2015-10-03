@@ -8,7 +8,6 @@
 
 require_once('Creds.php');
 
-
 function getStudentInfo($student_id){
     $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME;
     try {
@@ -42,8 +41,7 @@ function getStudentInfo($student_id){
             return $student_info;
     }
     else{
-        //temp
-        return "";
+        return "Error";
     }
 
 }
@@ -95,7 +93,7 @@ function getRewardInfo($student_id){
     }
     else{
         //temp
-        return "";
+        return "Error";
     }
 
 }
