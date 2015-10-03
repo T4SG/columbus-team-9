@@ -28,7 +28,7 @@ include('../includes/header.php');
                                 <h4 class="title">Keeping your promises</h4>
                             </div>
                             <div class="content">
-                                <form action="#insert_php_script.php" method="post">
+                                <form action="report.php?action=YouToldLebron" method="post">
                                     <div class="row">
                                         <div class="col-md-5">
                                             <div class="form-group">
@@ -50,16 +50,17 @@ include('../includes/header.php');
                                                 <label for="excuse">Why didn't you accomplish it?</label>
                                                 <input type="text" class="form-control" name='excuse' placeholder="Because...">
                                                 <label for="improvement">How will you improve?</label>
-                                                <input type="text" class="form-control" name='improvement 'placeholder="Next time I...">
+                                                <input type="text" class="form-control" name='improvement 'placeholder="Next time I..." onchange="toggle('submit')">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group" style="display:none;" id="did_activity">
                                                 <label for="excuse">Great thanks for keeping your side of the promise! Name one thing your learned!</label>
-                                                <input type="text" class="form-control" name='excuse' placeholder="Did you know that Penguins have knees?">
+                                                <input type="text" class="form-control" name='excuse' placeholder="Did you know that Penguins have knees?" onchange="toggle('submit')">
                                             </div>
                                         </div>
-                                        <input type="submit" class="btn btn-info btn-fill pull-right">Tell Lebron!</input>
+
+                                        <div style="display:none; id='submit"><input type="submit" class="btn btn-info btn-fill pull-right">Tell Lebron!</input></div>
                                     </div>
 
                                     <!--<div class="row">
