@@ -8,14 +8,15 @@
 }
 
 #menu-area {
+  margin-top:-10px;
   height: 100%;
-  width: 65%;
+  width: 70%;
   background-color: white;
   float: right;
 }
 
 .menu-box {
-    padding-top: 20px;
+    padding-top:20px;
     width: 50%;
     height: 50%;
     border: 1px solid black;
