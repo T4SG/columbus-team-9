@@ -4,6 +4,7 @@
             e.stopPropagation();
             e.preventDefault();
         }
+        
         this.$element = $(element);
         this.$newElement = null;
         this.button = null;
