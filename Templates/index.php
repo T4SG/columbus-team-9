@@ -76,7 +76,7 @@
     </div>
 
     <div class="main-panel">
-        <nav class="navbar navbar-default navbar-fixed" style="height:50px;background-color:#002D62;">
+        <nav class="navbar navbar-default navbar-static-top" style="height:40px;background-color:#002D62;">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2" style="padding-top:0px;color:white;">
@@ -95,7 +95,7 @@
             </div>
         </nav>
 
-        <div class="content" style="height:100%;padding:0px;">
+        <div class="content" style="height:90%;padding:0px;">
           <div id="lebron-area"style="padding:10px;">
               <a class="twitter-timeline" href="https://twitter.com/KingJames" data-widget-id="650175493866684416" data-chrome="nofooter noheader noborder transparent">>Tweets by @KingJames</a>
           </div>
@@ -103,25 +103,25 @@
               <a href="reporting.html">
                 <div class="menu-box" id="top-left">
                   <p class="menu-title">REPORTING</p>
-                  <img src="../assets/img/checkmark21.png" style="width:75px;height:75px;">
+                  <img src="../assets/img/checkmark21.png" style="width:100px;height:100px;">
                 </div>
               </a>
               <a href="user.html">
                 <div class="menu-box" id="top-right">
                   <p class="menu-title">ME</p>
-                  <img src="../assets/img/user168.png" style="width:75px;height:75px;">
+                  <img src="../assets/img/user168.png" style="width:100px;height:100px;">
                 </div>
               </a>
               <a href="rewards.html">
                 <div class="menu-box" id="bottom-left">
                   <p class="menu-title">REWARDS</p>
-                  <img src="../assets/img/premium1.png" style="width:75px;height:75px;">
+                  <img src="../assets/img/premium1.png" style="width:100px;height:100px;">
                 </div>
               </a>
               <a href="calendar.html">
                 <div class="menu-box" id="bottom-right">
                   <p class="menu-title">CALENDER</p>
-                  <img src="../assets/img/calendar146.png" style="width:75px;height:75px;">
+                  <img src="../assets/img/calendar146.png" style="width:100px;height:100px;">
                 </div>
               </a>
           </div>
@@ -155,22 +155,5 @@
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 	<script src="../assets/js/demo.js"></script>
-
-	<script type="text/javascript">
-    	$(document).ready(function(){
-
-        	demo.initChartist();
-
-        	$.notify({
-            	icon: 'pe-7s-gift',
-            	message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
-
-            },{
-                type: 'info',
-                timer: 4000
-            });
-
-    	});
-	</script>
 
 </html>

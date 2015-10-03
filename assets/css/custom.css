@@ -19,14 +19,12 @@
     padding-top:20px;
     width: 50%;
     height: 50%;
-    border: 1px solid black;
     text-align:center;
 }
 
 #top-left {
   float: left;
-  border-right: 0;
-  border-bottom: 0;
+  background-color: #FDBB30;
 }
 #top-left:hover {
   opacity: 0.5;
@@ -34,7 +32,7 @@
 
 #top-right {
   float: right;
-  border-bottom: 0;
+  background-color: #254E70;
 }
 #top-right:hover {
   opacity: 0.5;
@@ -42,7 +40,6 @@
 
 #bottom-left {
   float: left;
-  border-right: 0;
 }
 #bottom-left:hover {
   opacity: 0.5;
@@ -50,7 +47,6 @@
 
 #bottom-right {
   float: right;
-  text-align:center;
 }
 #bottom-right:hover {
   opacity: 0.5;
