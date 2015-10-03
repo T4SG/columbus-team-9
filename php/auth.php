@@ -31,8 +31,9 @@ try{
             $_SESSION['user_name'] = $user_info_row['user_name'];
 
             //check to see if password matches hash
+            //fake hash
             $user_hash = $user_info_row['password'];
-            if(password_verify($pass, trim($user_hash))){
+            if($user_hash == $pass){
                 //error here where you get a 404 if you put invalid id/pass from login.php - Montana
                 $backURL = (empty($_SESSION['backURL'])) ? '../Templates/index.html' : $_SESSION['backURL'];
                 unset($_SESSION['backURL']);
