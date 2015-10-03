@@ -12,6 +12,7 @@ session_start();
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
   <script src="../assets/js/chart.js"></script>
 
   <!--[if lt IE 9]>
@@ -22,16 +23,30 @@ session_start();
 <body>
 
   <div class="wrapper">
-      <?php include('../includes/sidebar.php');?>
-
       <div class="main-panel">
-          <?php include('../includes/navbar.php');?>
+
+        <nav class="navbar navbar-default navbar-static-top" style="height:50px;background-color:#002D62;">
+            <div class="container-fluid">
+                <p style="color:white;font-size:30px;float:left;margin-left:20px;">Metrics<p>
+                <a style="color:white;font-size:20px;float:right;" href="login.html">Logout</a>
+            </div>
+        </nav>
+
 
           <div class="content" style="height:90%;padding:0px;">
             <div id="menu-area" style="padding:0px;">
-                <p style="font-size:20px;">Student Attendance by Month</p>
-                <canvas id="myChart1" width="400" height="300"></canvas>
-                <canvas id="myChart2" width="400" height="300"></canvas>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p style="font-size:20px;">Student Attendance by Month</p>
+                    <canvas id="myChart1" width="300" height="300" style="float:left;"></canvas>
+                  </div>
+                  <div class="col-sm-6">
+                    <p style="font-size:20px;">Event Participation</p>
+                    <canvas id="myChart2" width="300" height="300" style="float:right;"></canvas>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -80,8 +95,32 @@ session_start();
     }
   ]
 
-    var myPieChart = new Chart(ctx).Pie(data2);
+    options = {
+      animationSteps : 50,
+    }
+
+    var myPieChart = new Chart(ctx).Pie(data2, options);
 
   </script>
+
+
+  <!--  Checkbox, Radio & Switch Plugins -->
+  <script src="../assets/js/bootstrap-checkbox-radio-switch.js"></script>
+
+  <!--  Charts Plugin -->
+  <script src="../assets/js/chartist.min.js"></script>
+
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/bootstrap-notify.js"></script>
+
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+  <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+  <script src="../assets/js/light-bootstrap-dashboard.js"></script>
+
+  <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+  <script src="../assets/js/demo.js"></script>
+
 </body>
 </html>
