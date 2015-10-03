@@ -36,7 +36,7 @@ try{
             $user_hash = $user_info_row['password_hash'];
             if($user_hash == $pass){
                 //error here where you get a 404 if you put invalid id/pass from login.php - Montana
-                $backURL = (empty($_SESSION['backURL'])) ? '../Templates/index.html' : $_SESSION['backURL'];
+                $backURL = (empty($_SESSION['backURL'])) ? '../Templates/index.php' : $_SESSION['backURL'];
                 unset($_SESSION['backURL']);
                 header('Location:'.$backURL);
             }
