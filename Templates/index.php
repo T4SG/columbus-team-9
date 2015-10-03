@@ -17,7 +17,7 @@ include('../includes/header.php');
               <a class="twitter-timeline" href="https://twitter.com/KingJames" data-widget-id="650175493866684416" data-chrome="nofooter noheader noborder transparent">>Tweets by @KingJames</a>
           </div>
           <div id="menu-area" style="padding:0px;">
-              <a href="reporting.html">
+              <a href="report.php">
                 <div class="menu-box" id="top-left">
                   <p class="menu-title">REPORTING</p>
                   <img src="../assets/img/checkmark21.png" style="width:100px;height:100px;">
