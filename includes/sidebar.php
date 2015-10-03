@@ -26,7 +26,7 @@
                 </a>
             </li>
             <li>
-                <a href="rewards.html">
+                <a href="rewards.php">
                     <p>Rewards</p>
                 </a>
             </li>
