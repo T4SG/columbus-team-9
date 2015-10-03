@@ -6,14 +6,14 @@ include('../includes/header.php');
 ?>
 
 
-<body> 
+<body>
 
 <div class="wrapper">
     <?php include('../includes/sidebar.php');?>
-    
+
     <div class="main-panel">
         <?php include('../includes/navbar.php');?>
-                     
+
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
@@ -108,12 +108,24 @@ include('../includes/header.php');
                     <div class="col-md-12 col-lg-12">
                         <div class="card card-user">
                            <?php echo getStudentInfo($student_id); ?>
+                           <p style="text-align:center;color:white;"> Road to Straight A's!</p>
+                           <div class="progress">
+                             <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                               <span class="sr-only">60% Complete (warning)</span>
+                             </div>
+                           </div>
+                           <p style="text-align:center;color:white;">You're close to perfect attendance!</p>
+                           <div class="progress">
+                             <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                               <span class="sr-only">40% Complete (success)</span>
+                             </div>
+                            </div>
                             <hr>
                             <div class="text-center">
                                 <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
                                 <button href="#" class="btn btn-simple"><i class="fa fa-twitter"></i></button>
                                 <button href="#" class="btn btn-simple"><i class="fa fa-google-plus-square"></i></button>
-    
+
                             </div>
                         </div>
                     </div>
@@ -202,12 +214,12 @@ include('../includes/header.php');
                             </div>
                         </div>
                     </div
-               
-                </div>                    
+
+                </div>
             </div>
         </div>
-        
-    </div>   
+
+    </div>
 </div>
 
 
@@ -216,23 +228,23 @@ include('../includes/header.php');
     <!--   Core JS Files   -->
     <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
-	
+
 	<!--  Checkbox, Radio & Switch Plugins -->
 	<script src="../assets/js/bootstrap-checkbox-radio-switch.js"></script>
-	
+
 	<!--  Charts Plugin -->
 	<script src="../assets/js/chartist.min.js"></script>
 
     <!--  Notifications Plugin    -->
     <script src="../assets/js/bootstrap-notify.js"></script>
-    
+
     <!--  Google Maps Plugin    -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	
+
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
 	<script src="../assets/js/light-bootstrap-dashboard.js"></script>
-	
+
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 	<script src="../assets/js/demo.js"></script>
-    
+
 </html>
