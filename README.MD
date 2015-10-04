@@ -1,4 +1,3 @@
-Hello from Team 9 - CFG
-Done!
+#Team 9 - Code For Good
 
 ## Best use of github award winner!!
