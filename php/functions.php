@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: montanawong
- * Date: 10/2/15
- * Time: 22:17
- */
 
 require_once('Creds.php');
 
@@ -17,7 +11,6 @@ function getStudentInfo($student_id){
         return $pe->getTraceAsString();
     }
 
-    //pdo = new PDO('mysql:host=' . DB_HOST . ';port=' . DB_PORT . ';dbname=' . DB_NAME, DB_USERNAME, DB_PASSWORD);
     $query = "SELECT * FROM student WHERE student_id = ?;";
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(1, $student_id, PDO::PARAM_STR);
@@ -68,8 +61,6 @@ function getRewardInfo($student_id){
         // failure
         return 0;
     }
-
-
 
     //get all rewards with promise cash value of equal or lesser value
     $query = "SELECT * FROM rewards
