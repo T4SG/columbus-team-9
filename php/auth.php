@@ -30,7 +30,6 @@ try{
         $count = $pdoStatement->rowCount();
 
         if($count==1){
-            //get the user id from the table after verifying information
             $user_info_row = $pdoStatement->fetch(PDO::FETCH_ASSOC);
             $_SESSION['student_id'] = $user_info_row['student_id'];
             $_SESSION['first_name'] = $user_info_row['first_name'];
